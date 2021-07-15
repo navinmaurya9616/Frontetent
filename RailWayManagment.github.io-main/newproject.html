@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ticket Cancellation</title>
+	<style>
+		
+		body{
+			background-image:url(rail.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+
+		#a
+{
+font-size:50px;
+color:rgba(255,255,255,0.7);
+background-color:rgba(0,0,0,0.7);
+font-family:calibri;}
+#b
+{
+font-size:25px;
+color:rgba(255,255,255,1.0);
+background-color:rgba(0,0,0,0.5);
+font-family:Aerial;}
+
+.grid-container
+{
+display:grid;
+grid-gap:5px;
+grid-template-areas:
+'div1 div1 div1 div2 div2 div2'
+}
+
+.item1{
+	grid-area:div1;
+	height: 400px;
+width: 100%;
+font-size:25px;
+background-image: url(sampleticket.png);
+background-repeat: no-repeat;
+background-size: cover;
+}
+.item2{
+	grid-area:div2;
+background-color: rgba(255,255,255,0.2);
+text-align: left;
+padding-top:0px;
+border-radius: 40px;
+}
+#c
+{
+	height: 40px;
+	width: 50%;
+	border-radius: 30px;
+}
+#d
+{
+	height: 40px;
+	width: 50%;
+	border-radius: 30px;
+}
+#e
+{
+	height: 40px;
+	width: 50%;
+	border-radius: 30px;
+}
+#f
+{
+	height: 40px;
+	width: 50%;
+	border-radius: 30px;
+}
+p
+{
+	font-size: 20px;
+	font-family: calibri;
+}
+#g
+{
+	background-color: rgba(6, 6, 9, 0.60);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 400px;
+    margin-top: 20px;
+}
+
+#g:hover
+{
+	background-color: rgba(6, 6, 9, 0.81);
+}
+
+	</style>
+
+
+	<script>
+		function abc()
+{
+	b=document.getElementById("c").value
+	if(b.length!=10)
+	{
+     alert("Check PNR number")
+	}
+	c=document.getElementById("d").value
+	if(d.length!=5)
+	{
+     alert("Check Train number")
+	}
+	e=document.getElementById("f").value
+	if(f.length!=10)
+	{
+     alert("Check Phone number")
+	}
+}
+
+
+
+
+
+	</script>
+
+</head>
+
+
+
+<body>
+<h1 id="a"><center>Ticket Cancellation</center></h1>
+<h3 id="b"><marquee><b><u>1:- 5% of the ticket price will be cut during cancellation as a fine. It has been written in the rules which you agree while booking a ticket!!!!!!</u></b></marquee></h3>
+<h3 id="b"><marquee><b><u>2:- Ticket cancelling will be applicable only in case valid mobile number has been given at the time of booking.</u></b></marquee></h3>
+<h3 id="b"><marquee><b><u>3:- Online cancellation shall be permitted only upto 30 minutes before the scheduled departure of the train if ticket is RAC/Waitlist.</u></b></marquee></h3>
+<h3 id="b"><marquee><b><u>4:- Once the passenger confirms full cancellation of PNR will be done and PNR will be marked as Cancelled but not refunded in the system. Seat/berth will be released. Refund amount due will also be displayed to the passenger on website</u></b></marquee></h3>
+<form>
+<div class="grid-container">
+<div class="item1"><b><u>Sample ticket:-</u></b></div>
+<div class="item2"><center>
+<p><b><u>PNR Number:</u></b></p><br><input type="text" name="email" id="c" placeholder="eg. B460474720">
+<br>
+<p><b><u>Train Number:</u></b></p><br><input type="text" name="contact" id="d" placeholder="eg. 12859">
+<br>
+<p><b><u>Ticket holder Name:</u></b></p><br><input type="text" name="pass" id="e" placeholder="eg. ABCDEFGH">
+<br>
+<p><b><u>Phone Number:</u></b></p><br><input type="text" name="pass" id="f" placeholder="eg. 9876543210">
+<br>
+</center>
+<input type="submit" id="g" value ="submit" onclick=abc()>
+</form>
+</div>
+</body>
+</html>

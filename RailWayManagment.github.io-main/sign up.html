@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Railway Reservation Form</title>
+
+    <style>
+    body
+    {
+      background-image: url("X3.jpg") ;
+      background-repeat: no-repeat;
+      background-size: cover;
+      color:white;
+      font-family:"Times New Roman", Times, serif;
+    }
+    div
+    {
+      font-size: 14pt;
+    }
+    .container
+    {
+      margin-left: 25%;
+      margin-top: 50px;
+      width:49.5%;
+    }
+    .header
+    {
+      padding:0px;
+      color:white;
+      background-color:rgba(0,0,0,0.09);
+    }
+    input,textarea,select
+    {
+      opacity: 0.4;
+      background-color: black;
+      color:white;
+    }
+    .form-control
+    {
+      padding: 10px;
+      border-radius: 10px;
+    }
+    #submit
+    {
+      border-radius: 10px;
+      padding: 2px;
+      width:100px;
+      height: 40px;
+      margin-left: 20%;
+    }
+    #submit:hover
+    {
+      background-color: White;
+      opacity:0.8;
+      color:black;
+    }
+    h1
+    {
+      font-size: 40px;
+      font-family:calibri;
+      color:black;
+      position: center;
+    }
+    p
+    {
+      text-align: right;
+    }
+    </style>
+
+  </head>
+
+  <body>
+    <div class="header">
+      <h1><center>CREATE A NEW ACCOUNT</h1></center>    
+    </div>
+    <div class="container">
+        <form method="post" name="myForm">
+        <div style="padding-bottom: 18px;font-size : 30px;">Enter your credentials</div>
+
+        <div style="padding-bottom: 18px;">First Name:*<span style="color: white;"></span><br/>
+        <input type="text" id="data_2" name="data_2" style="width : 40%;" placeholder="Your First Name" class="form-control" maxlength="5">
+        </div>
+
+        <div style="padding-bottom: 18px;">Last Name:<span style="color: white;"></span><br>
+          <input type="text" id="data_5" name="data_5" style="width : 40%;" class="form-control" placeholder="Your Last Name">
+        </div>
+
+        <div style="padding-bottom: 18px;">Gender
+        <span><input type="radio" id="" name="radio" value="Male" id = "gender"/> Male</span>
+        <span><input type="radio" id="" name="radio" value="Female"> Female</span>
+        <input type="radio" id="" name="radio" value="No"/> Other</span>
+        </div>
+
+         <div style="padding-bottom: 18px;">Marital Status
+        <span><input type="radio" id="" name="radio1" value="Married"/> Married</span>
+        <span><input type="radio" id="" name="radio1" value="Unmarried"> Unmarried</span>
+        </div>
+
+        <div style="padding-bottom: 18px;">Date of Birth:
+        <select id="data_3" name="data_3" style="width : 60px;" class="form-control">
+       <option>01</option> 
+       <option>02</option>
+        <option>03</option> 
+        <option>04</option> 
+        <option>05</option>
+        <option>06</option> 
+          <option>07</option>
+          <option>08</option>
+          <option>09</option>
+          <option>10</option>
+           <option>11</option>
+        <option>12</option>
+         <option>13</option>
+        <option>14</option>
+        <option>15</option>
+        <option>16</option>
+        <option>17</option>
+        <option>18</option>
+         <option>19</option>
+        <option>20</option>
+        <option>21</option>
+        <option>22</option>
+        <option>23</option>
+        <option>24</option>
+        <option>25</option>
+        <option>26</option>
+        <option>27</option>
+        <option>28</option>
+        <option>29</option>
+        <option>30</option>
+        <option>31</option>
+        </select>
+
+        <select id="data_3" name="data_3" style="width : 80px;" class="form-control">
+       <option>JAN</option> 
+       <option>FEB</option>
+        <option>MAR</option> 
+        <option>APR</option> 
+        <option>MAY</option>
+        <option>JUN</option> 
+          <option>JUL</option>
+          <option>AUG</option>
+          <option>SEP</option>
+          <option>OCT</option>
+           <option>NOV</option>
+        <option>DEC</option>
+        </select>
+          
+        <input type="text" id="data_5" name="data_5" style="width : 14%;" class="form-control" placeholder="Year of Birth" maxlength="4">
+
+        </div>
+
+        <div style="padding-bottom: 18px;">Enter User ID:*(use special characters)<span style="color: white;"></span><br>
+          <input type="text" id="data_01" name="data_01" style="width : 40%;" class="form-control" placeholder="nick2329">
+        </div>
+
+        <div style="padding-bottom: 18px;">Enter Password:*<span style="color: white;"></span><br>
+          <input type="password" id="data_0" name="data_5" style="width : 40%;" class="form-control" maxlength = "15" placeholder="password">
+        </div>
+
+        <div style="padding-bottom: 18px;">Confirm Password:*<span style="color: white;"></span><br>
+          <input type="password" id="data_00" name="data_00" style="width : 40%;" class="form-control" maxlength = "15" placeholder="password" onkeyup="check()">
+        </div>
+
+        <div style="padding-bottom: 18px;">Preferred Language:<br/>
+        <select id="data_3" name="data_3" style="width : 300px;" class="form-control">
+        <option>Select</option>
+        <option>Hindi</option>
+        <option>Punjabi</option>
+        <option>Bengali</option>
+        <option>Urdu</option>
+        <option>English</option>
+        </select>
+        </div>
+
+
+        <div style="padding-bottom: 18px;">Mobile Number:*<br/>
+        <input type ="text" id = "data_6"  name="data_6" style="width : 40%;" placeholder="Enter your phone number" class="form-control">
+        </div>
+
+        <div style="padding-bottom: 18px;">Email Address<br/>
+        <input type="text" id="data_7" name="data_7" style="width : 40%;" rows="3" placeholder="Your email address" class="form-control">
+        </div>
+
+        <div style="padding-bottom: 18px;">Residential Address<span style="color: white;"></span><br/>
+        <textarea id="data_8" name="data_8" style="width : 100%;" rows="5" placeholder="Enter your address" class="form-control"></textarea>
+        </div>
+
+        <div style="padding-bottom: 18px;border-radius:10px">
+          <input id="submit" type="submit" value="Sign Up" onclick="validateForm()">
+          <input id="submit" type="reset" value="Reset">
+        </div>
+
+        </form>
+      </div>
+
+    <p>*Fields are mandatory</p>
+
+
+      <script>
+        function validateForm()
+        {
+          var a=document.getElementById("data_2").value;
+          var c=document.getElementById('data_01').value;
+          var d=document.getElementById('data_0').value;
+          var e=document.getElementById('data_00').value;
+          var f=document.getElementById('data_6').value;
+
+          if (a=="") 
+          {
+          alert("First Name is mandatory!");
+          document.myForm.data_2.focus();
+          return false;
+          }
+
+          else if (c=="") 
+          {
+          alert('User ID is mandatory!');
+          document.myForm.data_01.focus();
+          return false;
+          }
+
+          else if (d=="" || e=="") 
+          {
+          alert('Password fields are mandatory!');
+          document.myForm.data_8.focus();
+          return false;
+          }
+          else if (f=="") 
+          {
+          alert('Mobile number is mandatory!');
+          document.myForm.data_8.focus();
+          return false;
+          }
+
+          else {
+            alert("Your account has been created! Now you can login from the menu.");
+            return true;
+          }
+        }
+
+        function check()
+        {
+          if(document.getElementById('data_0').value !=
+          document.getElementById('data_00').value)
+          {
+            alert("Passwords should match!")
+            return false;
+          }
+          else
+          {
+            return true;
+          }
+          return true;
+        }
+      </script>
+  </body>
+</html>
